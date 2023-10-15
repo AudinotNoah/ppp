@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/iconA.png">
+    <title>Audinot Noah | Auto Portrait</title>
+</head>
+<body>
+    <header>
+        <h1>Audinot Noah | Autoportrait</h1>
+        <hr>
+        <nav>
+            <a href="#" class="currentPage">Accueil</a>
+            <a href="cours.html">Cours ppp</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+    
+    <div class="chapters">
+        <button class="hidebtn" onclick="hideMenu()">&lt;</button>
+        <div id="menu">
+            <h2>Chapitres</h2>
+            <ol>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+            </ol>
+            <p>Cliquez pour y accéder</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="group">
+            <button class="categ" onclick="showCateg('presentation'),switchArrow('presA')">
+                <p class="Carrow" id="presA">&triangleright;</p>
+                <p class="Ctitle">Présentation</p>
+            </button>
+            <article id="presentation" class="parag">
+                <div class="video">
+                </div>
+                <h3>Présentation globale</h3>
+                <p>Bonjour je m'appelle Audinot Noah, j'ai 18 ans, je suis née à Bar-Le-Duc mais j'ai vécu à Saint-Disiez avant de venir à Nancy, j'ai 1 grand frère, une petite soeur, un chat et un chien </p>
+                <h3>Mes Qualités et Défauts</h3>
+                <div class="wrapper">
+                    <div class="stats" id="qualite">
+                        <h4>Mes Qualités</h4>
+                        <ul>
+                            <li>Investi</li>
+                            <li>Flexible</li>
+                            <li>Débrouillard</li>
+                            <li>logique</li>
+                        </ul>
+                    </div>
+                    <div class="stats" id="defaut">
+                        <h4>Mes Défauts</h4>
+                        <ul>
+                            <li>Timide</li>
+                            <li>Feignant</li>
+                            <li>Têtu</li>
+                            <li>Maladroit</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Intelligences Multiples</h3>
+                <div class="wrapper">
+                    <div class="colonne">
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('verbal'),select('verbalImg')">
+                                <img src="img/verbal.png" alt="personne qui parle" class="selectorImg" id="verbalImg">
+                            </button>
+                        </span>
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('visuelle'),select('visuImg')">
+                                <img src="img/visuelle.png" alt="Oeil" class="selectorImg" id="visuImg">
+                            </button>
+                        </span><span class="selector">
+                            <button class="selectorBtn" onclick="show('music'),select('musicImg')">
+                                <img src="img/musicale.png" alt="Note de musique" class="selectorImg" id="musicImg">
+                            </button>
+                        </span>
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('logique'),select('engImg')">
+                                <img src="img/logique.png" alt="engrenage" class="selectorImg" id="engImg">
+                            </button>
+                        </span>
+                    </div>
+                    <div class="imBox" id="emptyBox">
+                        <h4>Sélectionnez une Intelligence</h4>
+                        <p class="level">Niveau de maîtrise : XX/10</p>
+                        <p>Veuillez sélectionner une Intelligence.</p><p>Pour cela, cliquez sur l'une des icones présentes sur les côtés.</p>
+                    </div>
+                    <div class="imBox" id="verbal">
+                        <h4>L'intelligence verbale</h4>
+                        <p class="level">Niveau de maîtrise : 04/10</p>
+                        <p>L'intelligence verbale n'est pas vraiment mon point fort. j’ai jamais été bon pour comprendre les métaphores, et j'ai du mal à mettre des mots sur mes pensées.</p>
+                    </div>
+                    <div class="imBox" id="visuelle">
+                        <h4>L'intelligence spatiale</h4>
+                        <p class="level">Niveau de maîtrise : 07/10</p>
+                        <p>Je trouve que mon intelligence spatiale est l'une de mes forces. J'ai un bon sens de l'orientation, et je suis plus à l'aise lorsque les informations sont présentées sous forme de graphes, de cartes mentales, ou de schémas.</p>
+                    </div>
+                    <div class="imBox" id="music">
+                        <h4>L'intelligence musicale</h4>
+                        <p class="level">Niveau de maîtrise : ?/10</p>
+                        <p>L'intelligence musicale est un domaine où je suis le moins sûr .J'écoute constamment de la musique et ressens toujours des émotions particulières, mais je n'ai jamais joué d'instruments et cela ne m'attire pas particulièrement.                        </p>
+                    </div>
+                    <div class="imBox" id="logique">
+                        <h4>L'intelligence logique</h4>
+                        <p class="level">Niveau de maîtrise : 09/10</p>
+                        <p>Mon intelligence logique est probablement la plus développée. Bien que je n'aie jamais aimé les cours de maths, je trouve que c'est là où j'ai le plus de facilité, surtout en programmation.
+                        </p>
+                    </div>
+                    <div class="imBox" id="kine">
+                        <h4>L'intelligence kinesthésique</h4>
+                        <p class="level">Niveau de maîtrise : 03/10</p>
+                        <p>L'intelligence kinesthésique, c'est probablement mon point faible. J'ai toujours eu deux mains gauches et je n'apprécie pas vraiment le travail manuel.</p>
+                    </div>
+                    <div class="imBox" id="intra">
+                        <h4>L'intelligence intrapersonnelle</h4>
+                        <p class="level">Niveau de maîtrise : 04/10</p>
+                        <p>je dirais que c'est dans la moyenne. Je pense me comprendre, mais cela ne signifie pas nécessairement que je puisse expliquer mes pensées ou prendre les meilleures décisions et répondre à des questions sur moi-même ou me présenter c’est mon cauchemar</p>
+                    </div>
+                    <div class="imBox" id="inter">
+                        <h4>L'intelligence interpersonnelle</h4>
+                        <p class="level">Niveau de maîtrise : 05/10</p>
+                        <p>Cette intelligence est ma meilleure amie comme ma pire ennemie, c'est à dire que je peut-être très sociable tout comme je peux être introverti.</p>
+                        <p>J'aime avoir des relations avec les autres mais d'un autre côté j'essaie de les fuir le plus possible.</p>
+                    </div>
+                    <div class="imBox" id="eco">
+                        <h4>L'intelligence (du) naturaliste</h4>
+                        <p class="level">Niveau de maîtrise : 05/10</p>
+                        <p>En ce qui concerne l'intelligence écologique, je ne suis pas sûr de bien comprendre en quoi elle consiste. J'apprécie les balades dans la nature, mais je ne suis pas fan des insectes.
+                        </p>
+                        
+                    </div>
+                    <div class="colonne">
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('kine'),select('kineImg')">
+                                <img src="img/corporelle.png" alt="bonhomme" class="selectorImg" id="kineImg">
+                            </button>
+                        </span>
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('intra'),select('intraImg')">
+                                <img src="img/intra.png" alt="bonhomme qui se questionne" class="selectorImg" id="intraImg">
+                            </button>
+                        </span>
+                        <span class="selector">
+                            <button class="selectorBtn" onclick="show('inter'),select('interImg')">
+                                <img src="img/inter.png" alt="discussion" class="selectorImg" id="interImg">
+                            </button>
+                        </span><span class="selector">
+                            <button class="selectorBtn" onclick="show('eco'),select('natuImg')">
+                                <img src="img/naturaliste.png" alt="Feuilles" class="selectorImg" id="natuImg">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="group">
+            <button class="categ" onclick="showCateg('skills'),switchArrow('skiA')">
+                <p class="Carrow" id="skiA">&triangleright;</p>
+                <p class="Ctitle">Mes compétences pour l'informatique</p>
+            </button>
+            <article id="skills" class="parag">
+                <ul>
+                    <li>Anglais</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    
+                </ul>
+            </article>
+        </div>
+
+        <div class="group">
+            <button class="categ" onclick="showCateg('parcours'),switchArrow('parA')">
+                <p class="Carrow" id="parA">&triangleright;</p>
+                <p class="Ctitle">Mon parcours</p>
+            </button>
+            <article id="parcours" class="parag">
+                test
+
+            </article>
+        </div>
+
+        
+        <div class="rewind">
+            <a href="#">Remonter la page</a>
+        </div>
+    </section>
+    <div class="reseaux">
+        <!-- <a href="https://twitter.com/OkilesDev" target="_blank"><div class="resBox"><i class="fa-brands fa-twitter"></i></div></a>
+        <a href="https://instagram.com/lenny.clsn" target="_blank"><div class="resBox"><i class="fa-brands fa-instagram"></i></div></a>
+        <a href="https://twitch.tv/okiles" target="_blank"><div class="resBox"><i class="fa-brands fa-twitch"></i></div></a>
+        <a href="https://www.youtube.com/channel/UCtIlv_22wUx2npCMHXDsuSg" target="_blank"><div class="resBox"><i class="fa-brands fa-youtube"></i></div></a>
+        <a href="https://discord.gg/8MGN7hz4rh" target="_blank"><div class="resBox"><i class="fa-brands fa-discord"></i></div></a>
+        <a href="https://paypal.me/msardou" target="_blank"><div class="resBox"><i class="fa-brands fa-paypal"></i></div></a> -->
+    </div>
+    <footer>
+        <p>&copy; Audinot Noah, 2023</p>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
